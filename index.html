@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--Step 1-->
+<html lang="en">
+    <!--Step 2,3,4,5-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Audi Accessibility Quiz practice project">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audi Accessibility Quiz practice project</title>
+</head>
+<!--Step 6-->
+<body>
+    <!--Step 7,12,18-->
+    <header>
+      <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0NUUGT6Ll-kOWIGbtgMBIuhiIsSO0NiWEcMGpJ4OsFB1Y3YRA5ZEr8OhPUOoQUzJG7I&usqp=CAU">
+      <h1>RS5/S5 Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#user-info" accesskey="s">INFO</a></li>
+          <li><a href="#rs5-questions" accesskey="s">RS5</a></li>
+          <li><a href="#s5-questions" accesskey="s">S5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <!--Step 14,15,16,19,20,21,22,23,24,27,28,29,30,31,32,33-->
+        <form method="post" action="https://www.audi.co.za/za/web/en.html">
+          <section role="region" aria-labelledby="student-info">
+            <h2 id="user-info">User Info</h2>
+            <div class="info">
+              <label for="user-name">Name:</label>
+              <input type="text" name="user-name" id="user-name" />
+            </div>
+            <div class="info">
+              <label for="user-email">Email:</label>
+              <input type="email" name="user-email" id="user-email" />
+            </div>
+            <div class="info">
+              <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+              <input type="date" name="birth-date" id="birth-date" />
+            </div>
+          </section>
+          <section role="region" aria-labelledby="rs5-questions">
+            <h2 id="rs5-questions">RS5</h2>
+            <div class="question-block">
+              <p>1</p>
+              <fieldset class="question" name="q1">
+                <legend>R5 is the Best looking A5?</legend>
+                <ul class="answers-list">
+                  <li><label for="q1-a1"><input type="radio" name="rs5True/False" id="q1-a1" value="true">True</label></li>
+                  <li></li><label for="q1-a2"><input type="radio" name="rs5True/False" id="q1-a2" value="false">False</label></li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="question-block">
+              <p>2</p>
+              <fieldset class="question" name="q2">
+                <legend>RS5 is the best?</legend>
+                <ul class="answers-list">
+                  <li><label for="q2-a1"><input type="radio" name="s5True/False" id="q2-a1" value="true">True</label></li>
+                  <li><label for="q2-a2"><input type="radio" name="s5True/False" id="q2-a2" value="false">False</label></li>
+                </ul>
+              </fieldset>
+            </div>
+          </section>
+          <section role="region" aria-labelledby="s5-questions">
+            <h2 id="s5-questions">S5</h2>
+            <!--Step 35,36,37,38-->
+            <div class="formrow">
+              <div class="question-block"><label for="customer">Are you a S5 fan?</label></div>
+              <div class="answer">
+                <select name="customer" id="customer" required>
+                  <option value="">Select an option</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+
+              </div>
+              <!--Step 39,40,41-->
+              <div class="question-block"><label>Do you have any questions:</label></div>
+              <div class="answer">
+                <textarea  id="s5-questions" name="s5-questions" rows="5" cols="24" placeholder="What's the best A5..."></textarea>
+              </div>
+            </div>
+          </section>
+          <button type="submit">Send</button>
+        </form>
+        <!--Step 42,43,44-->
+        <footer><address>
+          <a href="https://www.audi.co.za/za/web/en.html">AUDI</a><br />
+          Rathoke<br />
+          Limpopo<br />
+          South Africa
+        </address></footer>
+    </main>
+    
+</body>
+</html>

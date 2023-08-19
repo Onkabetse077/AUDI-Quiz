@@ -1,0 +1,226 @@
+
+/*Step 66,67*/
+@media (prefers-reduced-motion: no-preference) {
+  * {
+  scroll-behavior: smooth;
+}
+}
+
+body {
+  background: #f5f6f7;
+  color: #c31212;;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+  /*Step 10,47,48*/
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #921111;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+/*Step 8,9*/
+#logo {
+  width: max(100px, 18vw);
+  background-color: #c31212;;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+}
+/*Step 11,49*/
+h1 {
+  color: #000000;
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+/*Step 49*/
+main{
+  padding-top:25px;
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+    /*Step 13,50*/
+    nav > ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding-inline-start: 0;  
+      margin-block: 0;
+      height: 100%;
+      flex-wrap: wrap;
+    }
+
+      /*Step 17*/
+      h1,
+h2 {
+  font-family: Verdana, Tahoma;
+
+}
+/*Step 52*/
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  margin-top:0;
+  padding-top: 60px;
+}
+
+
+
+      /*Step 25*/
+      .sr-only{
+        position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      /*Step 34*/
+      p::before{
+        content:"Question #";
+      }
+      /*Step 45*/
+      nav>ul>li{
+        color: #dfdfe2;
+        margin: 0 0.2rem;
+        padding: 0.2rem;
+        display: block; 
+       
+      }
+      /*Step 46*/
+      li>a{
+        color: inherit;
+        text-decoration: none
+      }
+      /*Step 47*/
+      nav > ul > li:hover{
+        background-color: #000000;
+        color: #c31212;;
+        cursor: pointer;
+      }
+
+      /*Step 51*/
+      section{
+        width:80%;
+        margin-top:0;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        max-width: 600px;
+      }
+
+      /*Step 53*/
+      .info{
+        padding:10px 0 0 5px;
+      }
+
+      /*Step 54*/
+      .formrow{
+        margin-top:30px;
+        padding:0 30px;
+      }
+
+      input{
+          font-size: 16px;
+      }
+
+      /*Step 55*/
+      .info>input{
+        width:50%;
+        text-align: left;;
+      }
+
+      /*Step 56*/
+      .info label{
+        width:10%;
+        min-width:55px;
+        text-align: right;
+     }
+
+     /*Step 57*/
+     .info label, .info input{
+      display:inline-block;
+    }
+
+    /*Step 58*/
+    .question-block{
+  
+      text-align: left;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      padding-top: 5px;
+      }
+
+      /*Step 59*/
+      p{
+        margin-top: 5px;
+      padding-left: 15px;
+      font-size: 20px;
+      }
+
+      /*Step 60*/
+      .question{
+        border: none;
+        padding-bottom: 0;
+      }
+
+      /*Step 61*/
+      .answers-list{
+        list-style:none;
+        padding:0;
+      }
+
+/*Step 62*/
+    button{
+      display: block;
+margin: 40px auto;
+width: 40%;
+padding: 15px;
+font-size: 23px;
+background: #d0d0d5;
+border: 3px solid #be0a0a;
+    }
+
+
+    /*Step 63*/
+    footer{
+      background-color:#aa1010;
+      display: flex;
+      justify-content: center;
+    }
+
+    /*Step 64*/
+    footer,footer a{
+      color:#dfdfe2;
+    }
+
+    /*Step 65*/
+    address {
+      text-align: center;
+      padding: 0.3em;
+    }
+
+  
